@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+        <div class="card col-lg-6">
+            <div class="card-body">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th><a class="my-button blur  z-index-fixed shadow" title="Relevant Title" href="#">Group A World cup</a></th>
+                            <th><img class="img" src="img/img5.png" alt=""></th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Netherlands</td>
+                            <td><input id="net"  placeholder="point" /></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Senegal</td>
+                            <td><input id="sen"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Ecuador</td>
+                            <td><input id="ecu"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Qatar</td>
+                            <td><input id="qat"  placeholder="point" /></td></td>
+                        </tr>
+                        <thead>
+                            <tr>
+                                <th><input type="button" class="btn btn-dark" value="Save" onclick="input()" /></th>
+                                <th> <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = chartdata()">Chart(graph)</button></th>
+                            </tr>
+                        </thead>
+                        
+                        <!-- and so on... -->
+                    </tbody>
+                </table>
+            </div>
+          </div>
+   
+
+          <div class="card col-lg-6">
+            <div class="card-body">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th><a class="my-button blur  z-index-fixed shadow" title="Relevant Title" href="#">Group B World cup</a></th>
+                            <th><img class="img" src="img/img5.png" alt=""></th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>England</td>
+                            <td><input id="eng"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>USA</td>
+                            <td><input id="us"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Iran</td>
+                            <td><input id="ira"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Wales</td>
+                            <td><input id="wal"  placeholder="point" /></td></td>
+                        </tr>
+                        <thead>
+                            <tr>
+                                <th><input type="button" class="btn btn-dark" value="Save" onclick="input2()" /></th>
+                                <th> <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = chartdata2()">Chart(graph)</button></th>
+                            </tr>
+                        </thead>
+                        <!-- and so on... -->
+                    </tbody>
+                </table>
+            </div>
+          </div>
+
+
+         <div class="card col-lg-6">
+            <div class="card-body">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th><a class="my-button blur  z-index-fixed shadow" title="Relevant Title" href="#">Group C World cup</a></th>
+                            <th><img class="img" src="img/img5.png" alt=""></th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Argentina</td>
+                            <td><input id="arg"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Poland</td>
+                            <td><input id="pol"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Mexico</td>
+                            <td><input id="mex"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Saudi Arabia</td>
+                            <td><input id="sau"  placeholder="point" /></td></td>
+                        </tr>
+                        <thead>
+                            <tr>
+                                <th><input type="button" class="btn btn-dark" value="Save" onclick="input3()" /></th>
+                                <th> <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = chartdata3()">Chart(graph)</button></th>
+                            </tr>
+                        </thead>
+                        
+                    </tbody>
+                </table>
+            </div>
+          </div> 
+
+           <div class="card col-lg-6">
+            <div class="card-body">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th><a class="my-button blur  z-index-fixed shadow" title="Relevant Title" href="#">Group D World cup</a></th>
+                            <th><img class="img" src="img/img5.png" alt=""></th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>France</td>
+                            <td><input id="fra"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Australia</td>
+                            <td><input id="aus"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Tunisia</td>
+                            <td><input id="tun"  placeholder="point" /></td></td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Denmark</td>
+                            <td><input id="den"  placeholder="point" /></td></td>
+                        </tr>
+                        <thead>
+                            <tr>
+                                <th><input type="button" class="btn btn-dark" value="Save" onclick="input4()" /></th>
+                                <th> <button class="btn btn-dark" type="button" onclick="getElementById('myChart').innerHTML = chartdata4()">Chart(graph)</button></th>
+                            </tr>
+                        </thead>
+                        
+                    </tbody>
+                </table>
+            </div>
+          </div>
+
+
+
+
+
+    </div>
+</div>
+    
+
+
+<div class="container">
+    <canvas id="myChart" style="width:100%; height: 300px;"></canvas>
+  </div>
+</div>
+
+
+
+<script src="chart.js"></script>
+</body>
+</html>
